@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="y2IziR8+?EfH|Z/!F7f#">list</variable><variable id="?-5Ksg-nyx88Z,Q:qh*w">text list</variable><variable id="FQ])]?vZhC=Zc8Hoe_gD">Analog Sensor</variable></variables><block type="device_forever" id=".FalyXj%,dwgH_Hr@~6S" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="nwOxr;HmS1AD0VGSImdD"><field name="VAR" id="FQ])]?vZhC=Zc8Hoe_gD">Analog Sensor</field><value name="VALUE"><block type="device_get_analog_pin" id=".jiGqeTawm+}|Rtm=^g{"><field name="name">AnalogPin.P1</field></block></value><next><block type="controls_if" id="k9`fJ^t:cidGyj;5?Yi$"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="OAd@8e%Tm$%k$`#tKDBQ"><field name="OP">LTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="A5%(pi4DraWsQazuob~!"><field name="VAR" id="FQ])]?vZhC=Zc8Hoe_gD">Analog Sensor</field></block></value><value name="B"><shadow type="math_number" id="7d1uH_E=AuE-h.to!.a7"><field name="NUM">300</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="jDOJ.bA/u+@0g5F#}vuK"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        # . . . # 
+        . # # # . 
+        . . . . .
+        `</field></block></statement><statement name="ELSE"><block type="controls_if" id="tA7{YQ}vA=#eF-VGexLM"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_operation" id="E_iGmM`_=y1,09JN*Eru"><field name="OP">AND</field><value name="A"><block type="logic_compare" id="V=y1YzeG~7(i^~q*~_Nx"><field name="OP">GTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="9mU3^oHM@,{JbBeX;)C]"><field name="VAR" id="FQ])]?vZhC=Zc8Hoe_gD">Analog Sensor</field></block></value><value name="B"><shadow type="math_number" id="Tm*IFOFt|7)rQgtR5~)e"><field name="NUM">300</field></shadow></value></block></value><value name="B"><block type="logic_compare" id="iy1J.HaKcCD0{TICz8k9"><field name="OP">LTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="ymWv`qCMzn(4R44o*TP^"><field name="VAR" id="FQ])]?vZhC=Zc8Hoe_gD">Analog Sensor</field></block></value><value name="B"><shadow type="math_number" id="AZ`Dd[x0C:iNhcxq,89l"><field name="NUM">550</field></shadow></value></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="`pL2%,*9)gnAX~):xbOE"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . .
+        `</field></block></statement><statement name="ELSE"><block type="controls_if" id="qs!bDvYR4OX$JI_bk$8n"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="K~~]nJP;ig*(n}Q;4R,b"><field name="OP">GTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="aShQYV~@qmJK?cM*r?`Z"><field name="VAR" id="FQ])]?vZhC=Zc8Hoe_gD">Analog Sensor</field></block></value><value name="B"><shadow type="math_number" id="zVH57.sCTB`.wPLq.MN)"><field name="NUM">1000</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="=+@M=ERrLX,KV;WR7hM,"><field name="LEDS">`
+        . # . # . 
+        . . . . . 
+        . # # # . 
+        # . . . # 
+        . . . . .
+        `</field></block></statement></block></statement></block></statement></block></next></block></statement></block></xml>
